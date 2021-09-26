@@ -1,0 +1,275 @@
+* {
+  box-sizing: border-box;
+}
+
+body{
+	padding: 30px;
+	font-style: normal;
+	font-family: Muli, sans-serif;
+}
+
+/*About Me Style*/
+.head nav{
+	float: right;
+	color: black;
+}
+
+.head a{
+	text-decoration: none;
+	color: black;
+}
+
+.head p{
+	word-spacing: 30px;
+}
+
+.para p{
+	word-spacing: 20px;
+}
+
+.AboutMe span{
+	color: #AB9DCA;
+}
+
+.flex-container img{
+	border-radius: 10px;
+}
+
+.flex-container {
+	display: flex;
+	flex-wrap: wrap;
+}
+
+.flex-left {
+	float: left;
+	flex: 50%;
+}
+
+.flex-right {
+	float: right;
+	flex: 50%;
+}
+
+@media (max-width: 800px) {
+  .flex-item-right, .flex-item-left {
+    flex: 100%;
+  }
+}
+
+/*Education Style*/
+.Education {
+  margin: auto;
+  background-image: url("campus.jpg");
+  background-size: 100%;
+  background-repeat: no-repeat;
+}
+
+.timeline {
+  position: relative;
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+.timeline::after {
+  content: '';
+  position: absolute;
+  width: 5px;
+  background-color: black;
+  top: 0;
+  bottom: 0;
+  left: 50%;
+  margin-left: -3px;
+}
+
+.container {
+  padding: 10px 40px;
+  position: relative;
+  background-color: inherit;
+  width: 50%;
+}
+
+.container::after {
+  content: '';
+  position: absolute;
+  width: 25px;
+  height: 25px;
+  right: -17px;
+  background-color: white;
+  border: 4px solid #FF9F55;
+  top: 15px;
+  border-radius: 50%;
+  z-index: 1;
+}
+
+.left {
+  left: 0;
+}
+
+.right {
+  left: 50%;
+}
+
+.left::before {
+  content: " ";
+  height: 0;
+  position: absolute;
+  top: 22px;
+  width: 0;
+  z-index: 1;
+  right: 30px;
+  border: medium solid #FF9F55;
+  border-width: 10px 0 10px 10px;
+  border-color: transparent transparent transparent #FF9F55;
+}
+
+.right::before {
+  content: " ";
+  height: 0;
+  position: absolute;
+  top: 22px;
+  width: 0;
+  z-index: 1;
+  left: 30px;
+  border: medium solid #FF9F55;
+  border-width: 10px 10px 10px 0;
+  border-color: transparent #FF9F55 transparent transparent;
+}
+
+.right::after {
+  left: -16px;
+}
+
+.content {
+  padding: 5px 30px;
+  background-color: white;
+  border: 2px solid #FF9F55;
+  position: relative;
+  border-radius: 6px;
+}
+
+@media screen and (max-width: 600px) {
+  .timeline::after {
+    left: 31px;
+  }
+
+  .container {
+    width: 100%;
+    padding-left: 70px;
+    padding-right: 25px;
+  }
+
+  .container::before {
+    left: 60px;
+    border: medium solid white;
+    border-width: 10px 10px 10px 0;
+    border-color: transparent white transparent transparent;
+  }
+
+  .left::after, .right::after {
+    left: 15px;
+  }
+
+  .right {
+    left: 0%;
+  }
+}
+
+/*My Skills Style*/
+.MySkills{
+	margin: auto;
+	justify-content: center;
+	align-content: center;
+}
+
+.column {
+    float: left;
+    width: 25%;
+}
+
+.row:after {
+    content: "";
+    display: table;
+    clear: both;
+}
+
+/*My Projects Style*/
+.MyProject {
+	margin: auto;
+	justify-content: center;
+	align-content: center;
+}
+
+.MyProject h1{
+	font-size: 30px;
+	text-decoration: none;
+	color: black;
+}
+
+.MyProject a{
+	text-align:center;
+	text-decoration: none;
+	color: black;
+	font-size: 20px;
+}
+
+.MyProject img:hover{
+	transform: scale(1.05);
+}
+
+.MyProject a:hover{
+	text-decoration: underline;
+}
+
+.MyProject p{
+	text-align: left;
+	color: grey;
+}
+
+.MyProject img{
+	border-radius: 10px;
+	height: 300px;
+	width: 650px;
+}
+
+/*Contact*/
+.ContactMe p{
+  color: grey;
+}
+
+.flex-container2 {
+  padding-left: 20px;
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.flex-left2 { 
+  float: left;
+  flex: 50%;
+}
+
+.flex-right2 {
+  float: right;
+  flex: 50%;
+}
+
+@media (max-width: 800px) {
+  .flex-item-right2, .flex-item-left2 {
+    flex: 100%;
+  }
+}
+
+.flex-left2 a{
+  text-decoration: none;
+  position: relative;
+  color: black;
+    text-transform: capitalize;
+}
+
+.flex-left2 a:hover{
+    text-transform: capitalize;
+}
+
+.footer p{
+  color: black;
+  text-align: center;
+}
